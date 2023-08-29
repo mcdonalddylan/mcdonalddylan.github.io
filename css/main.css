@@ -1,0 +1,171 @@
+/*
+colors:
+
+primary - white
+secondary - #663d00
+tertiary - #321e00
+accent - 
+*/
+
+@font-face {
+    font-family: 'Aegean';
+    src: url('../assets/Aegean.ttf'); 
+}
+
+body {
+    background: url('../assets/bgimagemedium.jpg') no-repeat fixed center;
+    background-size: cover;
+    font-family: 'Aegean';
+}
+
+.birthday-container {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.birthday-container::after {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 100px;
+    width: 40px;
+    background-image: linear-gradient(180deg, red, yellow);
+}
+
+.birthday-text {
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    text-shadow: 2px 2px #663d00;
+    display: inline-flex;
+}
+
+.birthday-number {
+    color: white;
+    font-size: 80px;
+    font-weight: 900;
+    text-shadow: 2px 2px #663d00;
+    margin: 0px 0px 0px 20px;
+    display: inline-flex;
+}
+
+.birthday-number-superscript {
+    vertical-align: top;
+    color: white;
+    font-size: 15px;
+    font-weight: 800;
+    text-shadow: 2px 2px #663d00;
+    margin: 0px 20px 0px 0px;
+    display: inline-flex;
+}
+
+.fade-in {
+    animation: fade-in-ani 0.5s ease-out 0s 1;
+}
+
+.fade-out {
+    animation: fade-out-ani 0.5s ease-in 0s 1;
+}
+
+.form-container {
+    display: block;
+    max-width: 500px;
+    text-align: center;
+    margin: 20px auto;
+    border: 3px solid #663d00;
+    border-radius: 40px;
+}
+
+.form {
+    border: 1px solid white;
+    background-color: #663d0070;
+    padding: 40px;
+    border-radius: 40px;
+    justify-content: center;
+}
+
+.form-title {
+    color: white;
+    text-shadow: 2px 2px #321e00;
+    animation: wobble-ani 1s ease 0s infinite;
+}
+
+.form-input {
+    width: 100%;
+    color: white;
+    padding: 15px;
+    transition: 0.2s ease;
+    border-radius: 15px;
+}
+
+.form-input:focus {
+    transform: scale(1.1);
+    transition: 0.2s ease;
+}
+
+.form-text-input {
+    margin: 15px 0px;
+    height: 100px;
+    box-sizing: border-box;
+    background-color: #f0fbea;
+    resize: none;
+}
+
+.form-button-input {
+    background-image: linear-gradient(-200deg, #4dc00b, #3c6206, #2e4b05);
+    border: 0;
+    box-shadow: 2px 2px white;
+    text-shadow: 1px 1px #321e00;
+    transition: 0.3s ease;
+}
+
+.form-button-input:hover {
+    transition: 0.3s ease;
+    background-color: white;
+    color: #663d00;
+}
+
+.hidden-button-container {
+    position: relative;
+}
+
+.hidden-button {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-size: 20px;
+    background-color: #00000000;
+    border: 0;
+    transition: 0.3s ease;
+    width: 30px;
+}
+
+.hidden-button:hover {
+    content: "";
+    background-image: url(../assets/bgimagesmall.jpg);
+    background-size: contain;
+}
+
+@keyframes wobble-ani {
+    0% {transform: rotate(2deg);}
+    50% {transform: rotate(-2deg);}
+    100% {transform: rotate(2deg);}
+}
+
+@keyframes fade-in-ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fade-out-ani {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@media only screen and (max-width: 678px) {
+    .form-title {
+        font-size: 40px;
+    }
+}

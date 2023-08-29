@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+    </head>
+    <body>
+        <div class="hidden-button-container fade-in">
+            <button class="hidden-button">.</button>
+        </div>
+        <div class="birthday-container fade-in" >
+            <h1 class="birthday-text">
+                Happy
+            </h1>
+            <h1 class="birthday-number"></h1>
+            <p class="birthday-number-superscript"></p>
+            <h1 class="birthday-text">
+                Birthday!
+            </h1>
+        </div>
+        <div class="form-container fade-in">
+            <form class="form" onsubmit="submitForm">
+                <h2 class="form-title">
+                    What's your favorite memory from this past year?
+                </h2>
+                <textarea
+                    class="form-input form-text-input"
+                    name="fav-mem"
+                    placeholder="Enter good times here"
+                    autocorrect="off"
+                    autocapitalize="off"
+                    autocomplete="off"
+                ></textarea>
+                <button class="form-input form-button-input" type="submit">
+                    Send IT!!
+                </button>
+            </form>
+        </div>
+    </body>
+    <script src="/js/main-page-utils.js" ></script>
+</html>
