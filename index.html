@@ -2,39 +2,62 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <link rel="stylesheet" type="text/css" href="/css/modal.css">
     </head>
     <body>
-        <div class="hidden-button-container fade-in">
-            <button class="hidden-button">.</button>
+        
+        <!-- Message Modal -->
+        <div class="modal-bg" style="display:none;">
+            <div class="modal-container">
+                <button class="modal-close-button">X</button>
+                <img class="modal-container-img" alt="love you babe" src="/assets/convertedTBellMedium.gif">
+                <div class="modal-text-container">
+                    <h2 class="modal-header">To Elissa,</h2>
+                    <p class="modal-text">
+                        I know that I've said it a lot, but's true, I'm very lucky to have you in my life.
+                        You're still <u>BY FAR</u> the cutest, funniest, smartest, and sexiest chick I've ever dated.
+                        I love you so much babe, and I know you're going to kick this bootcamps' ass B-)
+                    </p>
+                    <p class="modal-end-text">Love,<br>Dylan McDonald</p>
+                </div>
+            </div>
         </div>
-        <div class="birthday-container fade-in" >
-            <h1 class="birthday-text">
-                Happy
-            </h1>
-            <h1 class="birthday-number"></h1>
-            <p class="birthday-number-superscript"></p>
-            <h1 class="birthday-text">
-                Birthday!
-            </h1>
+        
+        <!-- Form Body -->
+        <div class="form-body">
+            <div class="hidden-button-container fade-in">
+                <button class="hidden-button">.</button>
+            </div>
+            <div class="birthday-container fade-in" >
+                <h1 class="birthday-text">
+                    Happy
+                </h1>
+                <h1 class="birthday-number"></h1>
+                <p class="birthday-number-superscript"></p>
+                <h1 class="birthday-text">
+                    Birthday!
+                </h1>
+            </div>
+            <div class="form-container fade-in">
+                <form class="form">
+                    <h2 class="form-title">
+                        What's your favorite memory from this past year?
+                    </h2>
+                    <textarea
+                        class="form-input form-text-input"
+                        name="fav-mem"
+                        placeholder="Enter good times here"
+                        autocorrect="off"
+                        autocapitalize="off"
+                        autocomplete="off"
+                    ></textarea>
+                    <button class="form-input form-button-input" type="submit">
+                        Send IT!!
+                    </button>
+                </form>
+            </div>
         </div>
-        <div class="form-container fade-in">
-            <form class="form" onsubmit="submitForm">
-                <h2 class="form-title">
-                    What's your favorite memory from this past year?
-                </h2>
-                <textarea
-                    class="form-input form-text-input"
-                    name="fav-mem"
-                    placeholder="Enter good times here"
-                    autocorrect="off"
-                    autocapitalize="off"
-                    autocomplete="off"
-                ></textarea>
-                <button class="form-input form-button-input" type="submit">
-                    Send IT!!
-                </button>
-            </form>
-        </div>
+
     </body>
     <script src="/js/main-page-utils.js" ></script>
 </html>
